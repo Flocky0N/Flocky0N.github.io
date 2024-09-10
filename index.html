@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reveal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="reveal.css">
+<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+<style>
+
+.inicio {
+  position: absolute;
+  right: 88%;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.github {
+  position: absolute;
+  left: 88%;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+
+@keyframes letterMove {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) rotate(90deg); /* Simula que las letras se caen o están en desorden */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); /* Se alinean y forman la palabra */
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="reveal">
+<div class="slides"> 
+
+<section data-background-video="Imagenes/video01.mp4" data-background-video-loop="true" data-background-video-muted="true">
+<h2>La realidad virtual</h2>
+  
+<center><audio controls><source src="Imagenes/audio01.mp4"></audio></center>
+</section>
+<section>
+<section data-background="Imagenes/siete.png">
+<h3>¿ Como diseñar experiencias atractivas</h3>
+<h3>aplicando realidad virtual?</h3>
+<img src="Imagenes/experienciaVR.gif">
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/once.png">
+<h4> ◽ Elegir una plataforma de realidad</h4>
+<p>Existen diferentes plataformas de realidad virtual como Oculus, SteamVR, Windows Mixed Reality y Google Cardboard. </p>
+
+    <img src="Imagenes/plataformas.png">
+    
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/doce.png" data-auto-animate>
+<h4>◽ Selección de un lenguaje de programación</h4>
+<p>Se debe seleccionar un lenguaje de programación que sea compatible con la plataforma elegida. Las opciones más populares
+  incluyen c# que se usa a menudo con Unity. </p>
+  <img src="Imagenes/unity.jpg">
+
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/doce.png" data-auto-animate>
+<h4> ◽ Diseño de una escena de realidad virtual</h4>
+<p>Es un entorno digital donde se colocan objetos, luces y sonidos. Para diseñarlas, se utilizan editores específicos 
+  dependiendo de la plataforma y el lenguaje de programación.</p>
+  <img src="Imagenes/escenas.gif">
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/trece.png" data-auto-animate>
+<h4> ◽ Adición de audio de realidad virtual</h4>
+<p></p>
+<video width="700" height="500" controls>
+  <source src="Imagenes/escenas.mp4">
+</video>
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/trece.png" data-auto-animate>
+<h4> ◽ Pruebas y depuración</h4>
+<p> Se comprueba o se corrige cualquier problema que pueda afectar a la funcionalidad o la calidad de la aplicación
+  de realidad virtual, para ello se utliza un simulador de realidad virtual que permite ejecutar y evaluar la aplicación.
+</p>
+<img src="Imagenes/depuracion.jpeg">
+</section>
+</section>
+<section data-background-video="Imagenes/video01.mp4" data-background-video-loop="true" data-background-video-muted="true">
+<h2>Aplicabilidad de C# en la realidad virtual</h2>
+</section>
+
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/treintaynueve.png" data-auto-animate>
+<p>C# es un lenguaje muy popular y más utlizado para crear aplicaciones de realidad virtual, orientada al campo
+  de videojuegos y tiene compatiblidad con herramientas de desarrollo de juego como <b>Unity</b>.
+</p>
+<img src="Imagenes/sintaxis.webp">
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/treintayocho.png" data-auto-animate>
+<p> C# tiene facilidad de aprendizaje lo que ayuda a los desarrolladores a enfocarse en la creación de la aplicación de realidad virtual en lugar 
+ de lidiar con código fuente demasiado complejo</p>
+  <img src="Imagenes/csharp.jpg">
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/uno.png" data-auto-animate>
+  <p>C# está orientada a objetos lo que facilita la organización del código, la reutilización de código fuente y la
+  organización de aplicaciones de realidad virtual complejas.</p>
+  <img src="Imagenes/poo.jpg">
+</section>
+
+  <section data-background-video="Imagenes/video01.mp4" data-background-video-loop="true" data-background-video-muted="true">
+  <h2>Script en C#</h2>
+  <p>Los scripts son bloques de código escritos en un lenguaje que Unity puede entender 
+    (C#) y se utilizan para programar la lógica del juego y todos los aspectos relacionados
+     con la implementación técnica.</p>
+</section>
+<section data-transition="slide" data-background-transition="zoom" data-background="Imagenes/treinta.png" data-auto-animate>
+<h3>Ejemplo de un script en C# para mover un objeto </h3>
+<section>
+  
+
+  <pre><code>
+    using UnityEngine;
+
+    public class Miprimerscript : MonoBehaviour
+    {
+        public float movimiento = 3.0f;
+    
+        void Update()
+        {
+            float moveX = Input.GetAxis("Horizontal") * movimiento * Time.deltaTime;
+            float moveZ = Input.GetAxis("Vertical") * movimiento * Time.deltaTime;
+            
+            transform.Translate(moveX, 0, moveZ);
+        }
+    }
+    
+</code></pre>
+<audio controls><source src="Imagenes/scripts.mp3"></audio>
+</div>
+</div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove",function(e){
+cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
++ "px; top: " + e.clientY + "px;";
+});
+</script>	
+		
+<script src="reveal.js"></script>
+<script>
+Reveal.initialize({
+history: true,
+transition: 'linear',
+
+mathjax2: {
+config: 'TeX-AMS_HTML-full',
+TeX: {
+Macros: {
+R: '\\mathbb{R}',
+set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+}
+}
+},
+
+				
+plugins: [ RevealMath.MathJax2 ]
+});
+</script>
+<script>
+function toggleCard(card) {
+  card.classList.toggle('active');
+}
+</script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+  Reveal.initialize({
+    plugins: [RevealHighlight],
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+
+<!-- Highlight.js para resaltar código -->
+<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/languages/javascript.js"></script>
+
+</body>
+</html>
+
